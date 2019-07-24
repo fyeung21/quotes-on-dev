@@ -30,6 +30,8 @@ ehthumbs.db
 !uploads/
 !README.md 
 
+plugins/*
+
 themes/*
 !themes/quotesondev-theme
 themes/quotesondev-theme/node_modules/
