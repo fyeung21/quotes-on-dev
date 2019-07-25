@@ -218,9 +218,30 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/exo/Exo-Medium.woff2") format("woff2"), url("../../assets/fonts/exo/Exo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/exo/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/exo/Exo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/exo/Exo-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/exo/Exo-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../assets/fonts/exo/Exo-LightItalic.woff2") format("woff2"), url("../../assets/fonts/exo/Exo-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -229,8 +250,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #fff;
+  font-family: "Exo", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -411,11 +432,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: black; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -499,7 +520,7 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #f1f1f1;
+    background-color: #222222;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);

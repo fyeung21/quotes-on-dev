@@ -1,3 +1,31 @@
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+    font-family: 'Exo';
+    src: url('../../assets/fonts/exo/Exo-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/exo/Exo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../assets/fonts/exo/Exo-Light.woff2') format('woff2'),
+        url('../../assets/fonts/exo/Exo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../assets/fonts/exo/Exo-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/exo/Exo-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../../assets/fonts/exo/Exo-LightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/exo/Exo-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
