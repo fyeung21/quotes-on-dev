@@ -31,12 +31,14 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -45,6 +47,7 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
+			
 
 			ul {
 				left: -999rem;
@@ -82,6 +85,11 @@ a {
 		border-left:1px solid #fff;
 		line-height:1.3rem;
 		font-weight:300;
+		@include desktop {
+			float:right;
+		}
+
+		
 		&:first-child {
 			border-left:none;
 		}

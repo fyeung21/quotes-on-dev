@@ -31,29 +31,54 @@ input[type="submit"] {
 	}
 }
 
-/* Fields */
+.search-enter {
+	span {
+	margin:1rem;
+	font-size:16px;
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-
-	&:focus {
-		color: #111;
+	@include tablet {
+		font-size:20px;
+	}
+	}
+	&:hover {
+		color: darken($color_green,10%);
 	}
 }
+
+/* Fields */
+
+// input[type="text"],
+// input[type="email"],
+// input[type="url"],
+// input[type="password"],
+// input[type="search"],
+// textarea {
+// 	color: $color__text-main;
+// 	border: 1px solid #ccc;
+// 	border-radius: 3px;
+
+// 	&:focus {
+// 		color: #111;
+// 	}
+// }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 3px 5px;
+	border:2px solid $color_green;
+	background-color:$color__background-screen;
+	width:250px;
+	height:30px;
+	font-size:16px;
+	font-weight:300;
+	font-size:16px;
+
+	@include tablet {
+		font-size:20px;
+	}
 }
 
 textarea {
