@@ -1,6 +1,33 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+html {
+  background-color: $color__background-screen;
+  max-width: $max-width;
+}
+.site {
+  background-color: $color__background-screen;
+  margin: 0 auto;
+}
+.site-branding {
+  margin: 3rem 1rem 0 1rem;
+  @include desktop {
+    text-align: center;
+  }
+}
+.site-main {
+  margin: 1rem;
+}
+.site-navigation {
+  bottom: 20px;
+}
+.entry-content {
+  max-width: 600px;
+  margin-bottom: 5rem;
+  a {
+    text-decoration: none;
+  }
+}
 
 /* All Archives Page */
 

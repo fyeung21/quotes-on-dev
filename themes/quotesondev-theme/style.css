@@ -436,7 +436,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: black; }
+    color: #009900; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -474,10 +474,16 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    border-left: 1px solid #fff;
+    line-height: 1.3rem;
+    font-weight: 300; }
+    .main-navigation li:first-child {
+      border-left: none; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 0 1rem; }
 
 /* Small menu. */
 .menu-toggle,
@@ -612,5 +618,31 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+html {
+  background-color: #222222;
+  max-width: 1080px; }
+
+.site {
+  background-color: #222222;
+  margin: 0 auto; }
+
+.site-branding {
+  margin: 3rem 1rem 0 1rem; }
+  @media (min-width: 1000px) {
+    .site-branding {
+      text-align: center; } }
+
+.site-main {
+  margin: 1rem; }
+
+.site-navigation {
+  bottom: 20px; }
+
+.entry-content {
+  max-width: 600px;
+  margin-bottom: 5rem; }
+  .entry-content a {
+    text-decoration: none; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
