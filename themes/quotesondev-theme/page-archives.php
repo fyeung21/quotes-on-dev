@@ -7,7 +7,7 @@
             <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
         </header>
 
-        <h1>authors</h1>
+        <h1>quote authors</h1>
         <div class="term-container">
             <?php $args = array(
                 'order' => 'DESC',

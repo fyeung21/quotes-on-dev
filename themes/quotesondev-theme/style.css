@@ -662,4 +662,26 @@ html {
       text-decoration: none; }
 
 /* All Archives Page */
+.page-id-210 h1 {
+  text-transform: capitalize;
+  margin: 1rem 0; }
+
+.page-id-210 .term-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 4rem 0; }
+  .page-id-210 .term-container p {
+    margin: 3px 0; }
+  .page-id-210 .term-container a {
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 300; }
+
+.page-id-210 .entry-title {
+  margin-bottom: 2.5rem; }
+
 /* Submit a Quote Page */
