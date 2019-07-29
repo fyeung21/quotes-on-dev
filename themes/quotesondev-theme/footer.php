@@ -1,4 +1,4 @@
-</div><!-- #content -->
+</div><h1 class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></h1><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
@@ -7,8 +7,7 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 			<p>
-				Brought to you by
-				<a href="http://www.redacademy.com>">Red Academy</a>
+				Brought to you by <a href="http://www.redacademy.com>">Red Academy</a>
 			</p>
 		</nav>
 

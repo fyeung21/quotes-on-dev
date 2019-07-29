@@ -17,11 +17,11 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-				<p class="site-description"></p>
-
-				<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/qod-logo.svg" alt="back to home"></a>
+				
+				<a class="qod-logo" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/qod-logo.svg" alt="back to home"></a>
 			</div>
 
 		</header>
 
+		<h1 class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></h1>
 		<div id="content" class="site-content">

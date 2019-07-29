@@ -642,6 +642,9 @@ html {
     @media (min-width: 1000px) {
       html .site-branding {
         text-align: center; } }
+    @media (min-width: 1000px) {
+      html .site-branding a img {
+        height: 100px; } }
   html .site-navigation {
     bottom: 20px; }
 
@@ -656,10 +659,34 @@ html {
     .site-content .site-main {
       margin: 0 auto; } }
   .site-content .site-main .entry-content {
-    max-width: 600px;
-    margin-bottom: 5rem; }
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    font-weight: 300; }
     .site-content .site-main .entry-content a {
       text-decoration: none; }
+
+.quote-icon {
+  display: none; }
+  @media (min-width: 1000px) {
+    .quote-icon {
+      display: block;
+      font-size: 120px;
+      color: #00cc00; } }
+
+@media (min-width: 1000px) {
+  .fa-quote-left {
+    font-size: 30px;
+    position: absolute;
+    top: 250px;
+    left: 230px; } }
+
+@media (min-width: 1000px) {
+  .fa-quote-right {
+    font-size: 30px;
+    position: absolute;
+    top: 250px;
+    right: 230px; } }
 
 /* All Archives Page */
 .page-id-210 h1 {
