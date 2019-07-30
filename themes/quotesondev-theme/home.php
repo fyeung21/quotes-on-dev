@@ -12,11 +12,11 @@
             )); ?>
 
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <div class="entry-content">
+                <div class="quote-content">
                     <?php the_content(); ?>
                 </div>
 
-                <?php the_title('<p class="entry-title">', '</p>'); ?>
+                <?php the_title('<p class="quote-title">', '</p>'); ?>
 
                 <button class="get_quote" type="button">Show Me Another!</button>
 

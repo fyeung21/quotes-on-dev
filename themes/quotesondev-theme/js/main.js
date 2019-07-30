@@ -14,8 +14,8 @@ $get_quote.on("click", function(event) {
       }
     }).done(function(response) {
       console.log(response);
-      $(".entry-content p").html(response[0].content.rendered);
-      $(".entry-title").html(response[0].title.rendered);
+      $(".quote-content p").html(response[0].content.rendered);
+      $(".quote-title").html(response[0].title.rendered);
     });
   });
 
