@@ -5,6 +5,20 @@
  * @package QOD_Starter_Theme
  */
 
+
+add_action( 'pre_get_posts', 'archive_query' );
+ 
+function archive_query( $query ) {
+ 
+    if ( ! is_admin() && $query->is_main_query() ) {
+ 
+        if ( is_archive() ) {
+            $query->set( 'posts_per_page', 5 );
+        }
+    }
+}
+ 
+
 /**
  * Removes Comments from admin menu.
  */
