@@ -80,6 +80,42 @@ html {
   }
 }
 
+.quote-content {
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
+  }
+}
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  font-weight: 300;
+  a {
+    color:#fff;
+    text-decoration:none;
+    margin:20px;
+    &:hover {
+      color:$color_green;
+    }
+  }
+  .quote-source {
+    margin:20px 0;
+  }
+}
+.get_quote {
+  @include desktop {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
 /* All Archives Page */
 .page-id-210 {
   h1 {
@@ -127,7 +163,7 @@ html {
     }
   }
   .entry-title {
-    h2 {
+    span {
       font-size: 22px;
       font-weight:300;
     }

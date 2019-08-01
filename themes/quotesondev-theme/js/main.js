@@ -13,8 +13,21 @@ jQuery(function ($) {
         xhr.setRequestHeader("X-WP-Nonce", qod_vars.wpapi_nonce);
       }
     }).done(function (response) {
+      console.log(response);
+      let $source = response[0]._qod_quote_source;
+      let $source_url = response[0]._qod_quote_source_url;
+      // if ($source_url) {
+      //   $(".quote-content p").html(response[0].content.rendered);
+      //   $(".quote-title").html(response[0].title.rendered);
+      //   $(".quote-source").html(`<a href="${$source_url}">${$source}</a>`);
+      // } else {
+      //   $(".quote-content p").html(response[0].content.rendered);
+      //   $(".quote-title").html(response[0].title.rendered);
+      // }
+
       $(".quote-content p").html(response[0].content.rendered);
       $(".quote-title").html(response[0].title.rendered);
+      $(".quote-source").html(`<a href="${$source_url}">${$source}</a>`);
     });
   });
 

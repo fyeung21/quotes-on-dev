@@ -678,6 +678,38 @@ html {
     top: 250px;
     right: 230px; } }
 
+.quote-content p {
+  font-size: 20px;
+  font-weight: 300; }
+  @media (min-width: 620px) {
+    .quote-content p {
+      font-size: 26px; } }
+  @media (min-width: 1080px) {
+    .quote-content p {
+      font-size: 38px; } }
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 22px;
+  font-weight: 300; }
+  .title-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px; }
+    .title-container a:hover {
+      color: #00cc00; }
+  .title-container .quote-source {
+    margin: 20px 0; }
+
+@media (min-width: 1080px) {
+  .get_quote {
+    display: table;
+    margin: 0 auto; } }
+
 /* All Archives Page */
 .page-id-210 h1 {
   text-transform: capitalize;
@@ -719,7 +751,7 @@ html {
     @media (min-width: 1080px) {
       .type-post p {
         font-size: 38px; } }
-  .type-post .entry-title h2 {
+  .type-post .entry-title span {
     font-size: 22px;
     font-weight: 300; }
   .type-post .entry-title a {
