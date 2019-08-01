@@ -8,26 +8,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
+	border: 1px solid $color_green;
 	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	font-size: .75rem;
+	background: $color__background-screen;
+	color: $color_green;
+	font-size: 18px;
 	line-height: 1;
-	padding: .6rem 1rem .4rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: 0.6rem 2rem;
 
 	&:hover {
-		border-color: #ccc #bbb #aaa;
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
-
-	&:active,
-	&:focus {
-		border-color: #aaa #bbb #bbb;
-		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+		border-color:darken($color_green, 10%);
+		color:darken($color_green, 10%);
 	}
 }
 
@@ -46,21 +37,6 @@ input[type="submit"] {
 }
 
 /* Fields */
-
-// input[type="text"],
-// input[type="email"],
-// input[type="url"],
-// input[type="password"],
-// input[type="search"],
-// textarea {
-// 	color: $color__text-main;
-// 	border: 1px solid #ccc;
-// 	border-radius: 3px;
-
-// 	&:focus {
-// 		color: #111;
-// 	}
-// }
 
 input[type="text"],
 input[type="email"],
