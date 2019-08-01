@@ -627,9 +627,14 @@ html {
     @media (min-width: 1080px) {
       html .site-branding {
         text-align: center; } }
-    @media (min-width: 1080px) {
-      html .site-branding a img {
-        height: 100px; } }
+    html .site-branding a img {
+      height: 50px; }
+      @media (min-width: 620px) {
+        html .site-branding a img {
+          height: 80px; } }
+      @media (min-width: 1080px) {
+        html .site-branding a img {
+          height: 100px; } }
   html .site-navigation {
     bottom: 20px; }
 
@@ -695,5 +700,32 @@ html {
 
 .page-id-210 .entry-title {
   margin-bottom: 2.5rem; }
+
+.page-title {
+  margin: 0;
+  padding-bottom: 3rem;
+  border-bottom: 1px dashed #fff; }
+
+.type-post {
+  padding: 2rem 0;
+  border-bottom: 1px dashed #fff; }
+  .type-post p {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300; }
+    @media (min-width: 620px) {
+      .type-post p {
+        font-size: 26px; } }
+    @media (min-width: 1080px) {
+      .type-post p {
+        font-size: 38px; } }
+  .type-post .entry-title h2 {
+    font-size: 22px;
+    font-weight: 300; }
+  .type-post .entry-title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300; }
 
 /* Submit a Quote Page */

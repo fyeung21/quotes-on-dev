@@ -18,6 +18,10 @@ html {
     }
     a {
       img {
+        height:50px;
+        @include tablet {
+          height:80px;
+        }
         @include desktop {
           height: 100px;
         }
@@ -41,9 +45,9 @@ html {
     }
     .entry-content {
       max-width: 650px;
-      margin:0 auto;
+      margin: 0 auto;
       margin-bottom: 5rem;
-      font-weight:300;
+      font-weight: 300;
       a {
         text-decoration: none;
       }
@@ -103,4 +107,36 @@ html {
   }
 }
 
+.page-title {
+  margin:0;
+  padding-bottom:3rem;
+  border-bottom:$dashed_border;
+}
+.type-post {
+  padding:2rem 0;
+  border-bottom:$dashed_border;
+  p {
+    margin-top:0;
+    font-size: 20px;
+    font-weight: 300;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
+  }
+  .entry-title {
+    h2 {
+      font-size: 22px;
+      font-weight:300;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+}
 /* Submit a Quote Page */
