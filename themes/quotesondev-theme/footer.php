@@ -1,15 +1,14 @@
-</div><h1 class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></h1><!-- #content -->
+</div>
+<h1 class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></h1>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-			<p>
-				Brought to you by <a href="http://www.redacademy.com>">Red Academy</a>
-			</p>
 		</nav>
+		
+		<p class="copyright"><span>Brought to you by</span><a href="http://www.redacademy.com>">Red Academy</a></p>
 
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->

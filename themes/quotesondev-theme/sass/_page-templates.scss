@@ -30,6 +30,7 @@ html {
   }
   .site-navigation {
     bottom: 20px;
+    display:inline-block;
   }
 }
 
@@ -114,6 +115,10 @@ html {
     display: table;
     margin: 0 auto;
   }
+}
+
+footer {
+	margin-top:6rem;
 }
 
 /* All Archives Page */
