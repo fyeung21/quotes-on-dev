@@ -6,19 +6,27 @@
 	<div class="entry-content">
 
 		<form class="submit-form">
-			<p>author of quote</p>
-			<input class="submit_author" type="text" name="author" value="">
+			<div class="input-container">
+				<p>Author of Quote</p>
+				<input class="submit_author" type="text" name="author" value="">
+			</div>
 
-			<p>quote</p>
-			<textarea class="quote_text" rows="4" cols="50" name="quote-text"></textarea>
+			<div class="input-container">
+				<p>Quote</p>
+				<textarea class="quote_text" rows="4" cols="50" name="quote-text"></textarea>
+			</div>
 
-			<p>where did you find this quote?(eg. book name)</p>
-			<input class="quote_origin" type="text" name="quote-origin" value="">
+			<div class="input-container">
+				<p>Where did you find this quote? (eg. book name)</p>
+				<input class="quote_origin" type="text" name="quote-origin" value="">
+			</div>
 
-			<p>provide the URL of the quote source, if available.</p>
-			<input class="quote_url" type="text" name="quote-url" value=""><br>
+			<div class="input-container">
+				<p>Provide the URL of the quote source, if available.</p>
+				<input class="quote_url" type="text" name="quote-url" value=""><br>
+			</div>
 
-			<input class="post_quote" type="submit" value="Submit Quote">
+			<button class="post_quote" type="button">Submit Quote</button>
 		</form>
 	</div>
 </article>

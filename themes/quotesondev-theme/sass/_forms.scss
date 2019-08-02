@@ -8,13 +8,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid $color_green;
+	border: 2px solid $color_green;
 	border-radius: 3px;
 	background: $color__background-screen;
 	color: $color_green;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1;
-	padding: 0.6rem 2rem;
+	padding: 0.6rem 2.5rem;
 
 	&:hover {
 		border-color:darken($color_green, 10%);
@@ -43,14 +43,13 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px 5px;
+	padding: 5px 10px;
 	border:2px solid $color_green;
+	border-radius: 3px;
 	background-color:$color__background-screen;
-	width:250px;
-	height:30px;
+	width:400px;
 	font-size:16px;
 	font-weight:300;
-	font-size:16px;
 
 	@include tablet {
 		font-size:20px;
@@ -58,6 +57,9 @@ input[type="search"] {
 }
 
 textarea {
-	padding-left: 3px;
+	background-color:$color__background-screen;
+	border:2px solid $color_green;
+	border-radius: 3px;
+	padding: 5px 10px;
 	width: 100%;
 }
