@@ -670,27 +670,25 @@ html {
     .site-content .site-main .entry-content a {
       text-decoration: none; }
 
-.quote-icon {
-  display: none; }
+.content-container {
+  position: relative; }
+  .content-container .quote-icon {
+    display: none; }
+    @media (min-width: 1080px) {
+      .content-container .quote-icon {
+        display: block;
+        font-size: 120px;
+        color: #00cc00; } }
   @media (min-width: 1080px) {
-    .quote-icon {
-      display: block;
-      font-size: 120px;
-      color: #00cc00; } }
-
-@media (min-width: 1080px) {
-  .fa-quote-left {
-    font-size: 30px;
-    position: absolute;
-    top: 250px;
-    left: 230px; } }
-
-@media (min-width: 1080px) {
-  .fa-quote-right {
-    font-size: 30px;
-    position: absolute;
-    top: 250px;
-    right: 230px; } }
+    .content-container .fa-quote-left {
+      position: absolute;
+      top: 0;
+      left: 50px; } }
+  @media (min-width: 1080px) {
+    .content-container .fa-quote-right {
+      position: absolute;
+      top: 0;
+      right: 60px; } }
 
 .quote-content p {
   font-size: 20px;

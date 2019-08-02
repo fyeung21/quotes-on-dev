@@ -18,9 +18,9 @@ html {
     }
     a {
       img {
-        height:50px;
+        height: 50px;
         @include tablet {
-          height:80px;
+          height: 80px;
         }
         @include desktop {
           height: 100px;
@@ -30,7 +30,7 @@ html {
   }
   .site-navigation {
     bottom: 20px;
-    display:inline-block;
+    display: inline-block;
   }
 }
 
@@ -56,28 +56,30 @@ html {
   }
 }
 
-.quote-icon {
-  display: none;
-  @include desktop {
-    display: block;
-    font-size: 120px;
-    color: $color_green;
+.content-container {
+  position: relative;
+
+  .quote-icon {
+    display: none;
+    @include desktop {
+      display: block;
+      font-size: 120px;
+      color: $color_green;
+    }
   }
-}
-.fa-quote-left {
-  @include desktop {
-    font-size: 30px;
-    position: absolute;
-    top: 250px;
-    left: 230px;
+  .fa-quote-left {
+    @include desktop {
+      position: absolute;
+      top: 0;
+      left: 50px;
+    }
   }
-}
-.fa-quote-right {
-  @include desktop {
-    font-size: 30px;
-    position: absolute;
-    top: 250px;
-    right: 230px;
+  .fa-quote-right {
+    @include desktop {
+      position: absolute;
+      top: 0;
+      right: 60px;
+    }
   }
 }
 
@@ -99,15 +101,15 @@ html {
   font-size: 22px;
   font-weight: 300;
   a {
-    color:#fff;
-    text-decoration:none;
-    margin:20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
     &:hover {
-      color:$color_green;
+      color: $color_green;
     }
   }
   .quote-source {
-    margin:20px 0;
+    margin: 20px 0;
   }
 }
 .get_quote {
@@ -118,7 +120,7 @@ html {
 }
 
 footer {
-	margin-top:6rem;
+  margin-top: 6rem;
 }
 
 /* All Archives Page */
@@ -149,15 +151,15 @@ footer {
 }
 
 .page-title {
-  margin:0;
-  padding-bottom:3rem;
-  border-bottom:$dashed_border;
+  margin: 0;
+  padding-bottom: 3rem;
+  border-bottom: $dashed_border;
 }
 .type-post {
-  padding:2rem 0;
-  border-bottom:$dashed_border;
+  padding: 2rem 0;
+  border-bottom: $dashed_border;
   p {
-    margin-top:0;
+    margin-top: 0;
     font-size: 20px;
     font-weight: 300;
     @include tablet {
@@ -170,7 +172,7 @@ footer {
   .entry-title {
     span {
       font-size: 22px;
-      font-weight:300;
+      font-weight: 300;
     }
     a {
       color: #fff;
@@ -185,9 +187,9 @@ footer {
 
 .submit-form {
   .input-container {
-    margin:2.5rem 0;
+    margin: 2.5rem 0;
   }
   .post_quote {
-    margin:2rem 2rem 2rem 0;
+    margin: 2rem 2rem 2rem 0;
   }
 }

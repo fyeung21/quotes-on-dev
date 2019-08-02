@@ -23,5 +23,6 @@
 
 		</header>
 
+		<div class="content-container">
 		<h1 class="quote-icon"><i class="fa fa-quote-left" aria-hidden="true"></i></h1>
 		<div id="content" class="site-content">

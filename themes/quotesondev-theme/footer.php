@@ -1,5 +1,6 @@
-</div>
+</div><!-- site-content-->
 <h1 class="quote-icon"><i class="fa fa-quote-right" aria-hidden="true"></i></h1>
+</div><!-- content-container -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
