@@ -775,6 +775,11 @@ footer {
     font-size: 22px;
     font-weight: 300; }
 
+.pagination a {
+  text-decoration: none;
+  font-weight: 300;
+  margin: 3px; }
+
 /* Submit a Quote Page */
 .submit-form .input-container {
   margin: 2.5rem 0; }
