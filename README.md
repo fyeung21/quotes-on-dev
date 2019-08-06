@@ -1,12 +1,14 @@
 # Quotes on Dev
 
-A site that cycles through an archive of quotes from developers on button click.
+A simple site that cycles through an archive of quotes from developers on button click, powered by wordpress and is made in mobile, tablet, and desktop versions.
 
 ## Installation
 
 1. Clone this project and add to your htdocs in MAMP.
 
-2. Run gulp.
+2. In command line, cd to the quotes on dev theme.
+
+3. Run gulp.
 
 
 # Technologies
@@ -15,14 +17,30 @@ A site that cycles through an archive of quotes from developers on button click.
 
 * CSS/sass
 
-* JS/Gulp
+* JS/JQuery
+
+* Gulp, Ajax, API
 
 * Wordpress Suite
 
 # Personal Learnings
 
-* Learned how to navigate through layers of php files and experimented with using php to make html dynamic.
+* Learned how to use ajax get and post requests to populate site with posts and also add posts.
 
-* Learned to create custom and install custom plugins for Wordpress.
+* Increased understanding of how to use and reuse php templates and functions.
 
-* Learned how to create a custom theme for Wordpress Blogs, and customize the dashboard for client use.
+* Increased understanding of wordpress's html structure to better manipulate css styling.
+
+# Screenshots
+
+## Desktop
+
+<img src="themes/quotesondev-theme/assets/screenshots/desktop.png">
+
+## Tablet
+
+<img src="themes/quotesondev-theme/assets/screenshots/tablet.png">
+
+## Mobile 
+
+<img src="themes/quotesondev-theme/assets/screenshots/mobile.png">
