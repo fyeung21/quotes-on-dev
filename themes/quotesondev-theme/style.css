@@ -624,26 +624,26 @@ object {
   max-width: 100%; }
 
 /* All Archives Page */
-.page-id-210 h1 {
+.all-archives h1 {
   text-transform: capitalize;
   margin: 1rem 0; }
 
-.page-id-210 .term-container {
+.all-archives .term-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 0 4rem 0; }
-  .page-id-210 .term-container p {
+  .all-archives .term-container p {
     margin: 3px 0; }
-  .page-id-210 .term-container a {
+  .all-archives .term-container a {
     text-decoration: none;
     margin: 5px;
     font-size: 20px;
     font-weight: 300; }
 
-.page-id-210 .entry-title {
+.all-archives .entry-title {
   margin-bottom: 2.5rem; }
 
 .page-title {
