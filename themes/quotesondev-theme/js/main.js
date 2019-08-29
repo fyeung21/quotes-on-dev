@@ -2,23 +2,32 @@ jQuery(function ($) {
 
   const $get_quote = $(".get_quote"),
     $post_quote = $(".post_quote");
+    let $lastPage = '';
 
   $get_quote.on("click", function (event) {
     event.preventDefault();
+    $lastPage = document.URL;
+
     $.ajax({
       method: "get",
-      url: qod_vars.rest_url + "wp/v2/posts?filter[orderby]=rand&[posts_per_page]=1",
+      url: window.qod_vars.rest_url + "wp/v2/posts?filter[orderby]=rand&[posts_per_page]=1",
 
       beforeSend: function (xhr) {
-        xhr.setRequestHeader("X-WP-Nonce", qod_vars.wpapi_nonce);
+        xhr.setRequestHeader("X-WP-Nonce", window.qod_vars.wpapi_nonce);
       }
     }).done(function (response) {
       const $source = response[0]._qod_quote_source;
       const $source_url = response[0]._qod_quote_source_url;
 
+      history.pushState('', '', window.qod_vars.home_url + '/' + response[0].slug);
+
       $(".quote-content p").html(response[0].content.rendered);
       $(".quote-title").html(response[0].title.rendered);
       $(".quote-source").html(`<a href="${$source_url}">${$source}</a>`);
+
+      $(window).on ('popstate', function() {
+        window.location.replace($lastPage);
+      });
     });
   });
 
