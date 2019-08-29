@@ -33,19 +33,23 @@ jQuery(function ($) {
       url: $(".quote_url").val()
     };
 
-    $.ajax({
-      method: "post",
-      url: qod_vars.rest_url + "wp/v2/posts/",
-      data: $submit_quote,
+    if ($submit_quote.title === "" && $submit_quote.content === "") {
+      alert("Sorry, 'Author' and 'Quote' are required fields.");
+    } else {
+      $.ajax({
+        method: "post",
+        url: qod_vars.rest_url + "wp/v2/posts/",
+        data: $submit_quote,
 
-      beforeSend: function (xhr) {
-        xhr.setRequestHeader("X-WP-Nonce", qod_vars.wpapi_nonce);
-      }
-    }).done(function (response) {
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader("X-WP-Nonce", qod_vars.wpapi_nonce);
+        }
+      }).done(function () {
 
-      $(".submit-form").html("Thanks, your quote submission was received!");
-      $(".submit-form").append('<br><a href="' + qod_vars.home_url + '/submit">Click here to submit another!</a>');
-    });
+          $(".submit-form").html("Thanks, your quote submission was received!");
+          $(".submit-form").append('<br><a href="' + qod_vars.home_url + '/submit">Click here to submit another!</a>');
+      });
+    }
   });
 
 });
