@@ -429,7 +429,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #00cc00; }
+  color: #00cc00;
+  text-decoration: none; }
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
@@ -489,7 +490,6 @@ a {
       .site-info .main-navigation li:last-child {
         border-right: 1px solid #fff; } }
   .site-info a {
-    text-decoration: none;
     margin: 0 1rem; }
   .site-info .copyright {
     display: -webkit-box;
@@ -638,7 +638,6 @@ object {
   .all-archives .term-container p {
     margin: 3px 0; }
   .all-archives .term-container a {
-    text-decoration: none;
     margin: 5px;
     font-size: 20px;
     font-weight: 300; }
@@ -669,12 +668,10 @@ object {
     font-weight: 300; }
   .type-post .entry-title a {
     color: #fff;
-    text-decoration: none;
     font-size: 22px;
     font-weight: 300; }
 
 .pagination a {
-  text-decoration: none;
   font-weight: 300;
   margin: 3px; }
 
@@ -741,8 +738,6 @@ html {
     margin: 0 auto;
     margin-bottom: 5rem;
     font-weight: 300; }
-    .site-content .site-main .entry-content a {
-      text-decoration: none; }
 
 .quote-content p {
   font-size: 20px;
@@ -763,8 +758,6 @@ html {
   font-size: 22px;
   font-weight: 300; }
   .title-container a {
-    color: #fff;
-    text-decoration: none;
     margin: 20px; }
     .title-container a:hover {
       color: #00cc00; }

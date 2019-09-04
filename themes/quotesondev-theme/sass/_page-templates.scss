@@ -75,9 +75,6 @@ html {
       margin: 0 auto;
       margin-bottom: 5rem;
       font-weight: 300;
-      a {
-        text-decoration: none;
-      }
     }
   }
 }
@@ -99,8 +96,6 @@ html {
   font-size: 22px;
   font-weight: 300;
   a {
-    color: #fff;
-    text-decoration: none;
     margin: 20px;
     &:hover {
       color: $color_green;
